@@ -1,0 +1,26 @@
+{
+  "name": "interviews",
+  "version": "1.0.0",
+  "description": "## Websites",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whoisjordangarcia/interviews.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whoisjordangarcia/interviews/issues"
+  },
+  "homepage": "https://github.com/whoisjordangarcia/interviews#readme",
+  "dependencies": {
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.16",
+    "ts-node": "^10.9.2"
+  }
+}
