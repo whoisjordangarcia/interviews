@@ -60,6 +60,9 @@ class MinStack {
     }
 }
 
+// Time O(1)
+// Space O(n)
+
 var obj = new MinStack()
 obj.push(-2)
 obj.push(0)
