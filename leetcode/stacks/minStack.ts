@@ -41,9 +41,9 @@ class MinStack {
     }
 
     push(val: number): void {
-        let min = this.arr[this.length].min
+        let min = this.arr[this.length]?.min != null ? this.arr[this.length].min : val
         this.length++
-        this.arr[this.length] = { val: val, min: val < min ? val : min }
+        this.arr[this.length] = { val: val, min: val <= min ? val : min }
     }
 
     pop(): void {
@@ -52,7 +52,7 @@ class MinStack {
     }
 
     top(): number {
-        return this.arr[this.length]
+        return this.arr[this.length].val
     }
 
     getMin(): number {
@@ -61,9 +61,10 @@ class MinStack {
 }
 
 var obj = new MinStack()
-obj.push(1)
+obj.push(-2)
 obj.push(0)
-obj.push(3)
+obj.push(-3)
+console.log(obj.getMin())
 obj.pop()
-var param_3 = obj.top()
-var param_4 = obj.getMin()
+obj.top()
+console.log(obj.getMin())
