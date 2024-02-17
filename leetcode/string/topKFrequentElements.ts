@@ -6,6 +6,16 @@ Example 1:
 Input: nums = [1,1,1,2,2,3], k = 2
 Output: [1,2]
 
+// HashMap
+{
+    [1]: 3
+    [2]: 2
+    [3]: 1
+}
+
+
+
+
 Example 2:
 Input: nums = [1], k = 1
 Output: [1]
