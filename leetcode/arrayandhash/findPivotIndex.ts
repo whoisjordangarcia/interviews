@@ -43,14 +43,14 @@
 
 function pivotIndex(nums: number[]): number {
     let total = 0
-    for(var i = 0; i < nums.length; i++) {
+    for(var i = 0; i < nums.length; i++) { // Time O(n)
         total+=nums[i]
     }
     let leftSum = 0
-    for(var i =0; i <nums.length; i++){
+    for(var i =0; i <nums.length; i++){ // Time O(n)
         let rightSum = total - nums[i] - leftSum
         if(leftSum == rightSum) {
-            return i
+            return i // Space O(n)
         }
         leftSum +=nums[i]
     }
