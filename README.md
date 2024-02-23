@@ -15,6 +15,10 @@
 - [neetcode.io](https://neetcode.io/)
 - [leetcode](https://leetcode.com/)
 
+## System Designs
+
+- [bytebytego](https://bytebytego.com/)
+
 ## Interview Books
 
 - [Cracking the Coding Interview: 189 Programming Questions and Solutions](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
