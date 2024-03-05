@@ -1,4 +1,4 @@
-    /*
+/*
  * @lc app=leetcode id=424 lang=typescript
  *
  * [424] Longest Repeating Character Replacement
@@ -49,30 +49,24 @@
  * 
  */
 
-// [A,B,A,B,A,B,B,A]
-
 // @lc code=start
 function characterReplacement(s: string, k: number): number {
-    let map = {}
+    const map = {}
     let left = 0
-    let length = 0
-    for(var right = 0; right < s.length; right++) {
-        const char = s[right]
-        if(map[char]) {
-            map[char]++
+    let longestLength = 0
+    for(var right=0; right < s.length; right++) {
+        if(!map[s[right]]) {
+            map[s[right]] = 1
         } else {
-            map[char] = 1
+            map[s[right]]++
         }
-        while(((right - left + 1) - Math.max(...Object.values(map) as number[])) > k){
-            map[s[left]] -= 1
+        while((right - left + 1) - Math.max(...Object.values(map) as number[]) > k) {
+            map[s[left]]--
             left++
         }
-        length = Math.max(length, right - left + 1)
+        longestLength = Math.max(longestLength, right  - left + 1)
     }
-    return length
+    return longestLength
 };
-
-// Space O(1)
-// Time O(n)
 // @lc code=end
 
