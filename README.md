@@ -10,6 +10,10 @@
 
 - Name: [LeetCode](https://marketplace.visualstudio.com/items?itemName=LeetCode.vscode-leetcode)
 
+## Strategy
+
+- Create a Spaced-Repetition Track sheet
+
 ## Websites
 
 - [neetcode.io](https://neetcode.io/)
