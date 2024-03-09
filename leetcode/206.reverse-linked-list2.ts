@@ -65,13 +65,20 @@
  * }
  */
 
+// 1 2 3 4 5
+// 5->4->3->2->1
+
 function reverseList(head: ListNode | null): ListNode | null {
     let previous = null
+
     while(head) {
-        previous = new ListNode(head.val, previous)
+        previous = new ListNode(head.val, previous) // reference next to itself
         head = head.next
     }
     return previous
 };
+
+// Space O(1)
+// Time O(n)
 // @lc code=end
 

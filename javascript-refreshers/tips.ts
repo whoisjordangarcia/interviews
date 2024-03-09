@@ -85,3 +85,5 @@ for (const key of Object.keys(objectTest)) {
 for (const [key, value] of Object.entries(objectTest)) {
     console.log(key, value)
 }
+
+'test'.indexOf('e') == 1
